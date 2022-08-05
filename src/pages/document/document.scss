@@ -1,0 +1,102 @@
+.document{
+    .document_details{   
+        background-color: var(--white);
+        border-radius: 1rem;
+        .top{
+            border-bottom: 1px solid #ccc;
+            align-items: baseline;
+            box-sizing: border-box;
+            --bs-gutter-x : 0;
+            .title{
+                 font-size: 1.8em;
+                 margin:0;
+                text-transform : capitalize;
+                margin-right: 1rem;
+            }
+            .ferme{
+                margin:0;
+                text-transform : capitalize
+            }
+            .time{
+                text-align: right;
+                text-transform : capitalize;
+                font-size: 1em;
+                margin: 0;
+                color :  var(--gray-50);
+                min-width: 200px
+            }
+        }
+        .divider{
+            flex-grow: 1;
+            border-bottom: 0.1px solid var(--gray-100);
+            height: 0;
+        }
+        .details{
+            --bs-gutter-x : 0;
+            padding: 3rem;
+            .title_details{
+                text-transform: capitalize;
+                color: #1a1919;
+                font-weight: 600;
+
+            }
+
+            .property{
+                min-width: 30%;
+                .prop_name{
+                    text-transform: capitalize;
+                    color: var( --gray-100);
+                    margin: 0;
+                    font-size: .9em;
+                    text-align: center;
+                }
+                .prop_value{
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+            }
+            .property_text{
+                overflow: hidden;
+                padding: 20px !important;
+                word-break: break-all;
+                font-weight: 600;
+
+            }
+            .prop_text_value{
+                font-size: .9em;
+            }
+        }
+
+    }
+    .page-icon{
+        max-width: 50px;
+        i{
+            padding: 5px;
+            color: var(--white);
+            background-color: var(--bs-gray-600);
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+    }
+
+    .button-gps{
+        font-size: 1.8em !important;
+        padding: 2px 6px !important
+    }
+}
+
+@media (max-width: 768px) {
+   
+    .details{
+        padding: 10px !important;
+
+        .property{
+            min-width: 45% !important;
+        }
+    }
+}
+
+
+

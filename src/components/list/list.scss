@@ -1,0 +1,53 @@
+.list{
+    .wilaya_title{
+        font-size: 1.3rem;
+        text-transform: capitalize;
+    }
+    .work_show{
+        border: 1px solid var(--gray-border-500);
+        align-items: center !important;
+        justify-content: space-between !important;
+        border-radius: 20px !important;
+        .farme_name{
+            text-transform: capitalize;
+            font-size: 1.3em;
+            margin: 0;
+        }
+        .work-details{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .work_time ,  .work_place{
+                margin: 0;
+                background-color : var(--gray-background-50);
+                padding: 0.3rem 1.5rem;
+                border-radius: 20px !important;
+                text-transform: capitalize;
+                i{
+                    margin-right: 15px;
+                    font-size: 1.2rem;
+                }
+            }
+            .infos{
+                padding: 0.3rem 1.5rem;
+                border-radius: 20px !important;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .work-details{
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+    }
+}
+@media (max-width: 700px) {
+    .work_show{
+        margin: 0.5rem!important;
+    }
+}

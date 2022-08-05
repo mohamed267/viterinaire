@@ -1,0 +1,120 @@
+.navbar{
+    .img-logo{
+        width : 100px
+    }
+
+    .text-logo{
+        width : 200px
+
+    }
+    background-color: var(--primary-black);
+    padding: 10px;
+    color : var(--white);
+    margin: 0 !important;
+    padding: 0 !important;
+    .container-fluid{
+        align-items: stretch !important;
+    }
+    .nav-brand{
+        font-size: .9em;
+        position: relative;;
+        .text-logo{
+            margin : 0 10px;
+            &:before{
+                position: absolute;
+
+            }
+        }
+    }
+    .listNav{
+        text-transform: capitalize;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-transition: background-color 1000ms linear;
+        -ms-transition: background-color 1000ms linear;
+        transition: background-color 1000ms linear;
+        &:hover{
+            background-color :  var(--gray-hover);
+        }
+        a{ 
+            color : var(--white);
+           
+        }
+        &.selected{
+            -webkit-transition: background-color 1000ms linear;
+            -ms-transition: background-color 1000ms linear;
+            transition: background-color 1000ms linear;
+            background-color: var(--gray-hover);
+        }
+       
+        
+    }
+    &.light{
+        background-color: var(--white);
+        a{ 
+            color : black;
+        }
+        .listNav{
+            &:hover{
+                background-color: var(--gray-hover-100);
+            }
+            &.selected{
+                -webkit-transition: background-color 1000ms linear;
+                -ms-transition: background-color 1000ms linear;
+                transition: background-color 1000ms linear;
+                background-color: var(--gray-hover-100);
+            }
+        }
+    }
+    .togglerWrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        .toogler{
+            border: none;
+            &:focus{
+                border: 0 !important;
+                box-shadow : none
+            }
+        }
+    }
+    .title-nav{
+        color : var(--white-text);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-brand{
+        padding: 0;
+        padding: 5px;
+    }
+    .img-logo{
+        max-width: 80px;
+        object-fit: cover;
+    }
+
+    .text-logo{
+        max-width: 110px;
+    }
+    .title-nav{
+        font-size: .5em !important;
+    }
+}
+@media (max-width :  573px){
+    .listNav{
+        &.selected{
+            background-color: transparent !important;
+        }
+    }
+}
+
+.contactNavBar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+

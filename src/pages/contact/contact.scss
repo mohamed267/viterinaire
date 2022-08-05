@@ -1,0 +1,131 @@
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .content_contact{
+        position: relative;
+        flex-grow: 1;
+        // background-color: black;
+        background:linear-gradient(
+            -95deg, 
+            var(--gray-background), 
+            var(--white-background));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .pre{
+            color : var(--white-100);
+            font-size: 3em;
+            font-family: serif;
+            font-style: italic;
+        }
+        .desc{
+            display: flex;
+        align-items: center;
+        justify-content: space-between;
+            p{
+                color : var(--white-100);
+                font-size: 1.2em;
+                text-transform: capitalize;
+                font-weight: 700;
+            }
+            .liner{
+                border: 1px solid #fff;
+            }
+        }
+    }
+}
+
+.wrapper-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,.8);
+}
+
+@media (min-width :  573px){
+    .listNav{
+        padding: 1.5rem!important
+        
+    }
+}
+.wrapper{
+    position : absolute;
+    top:0;
+    color: #E8E8E8;
+    width: 100%;
+    .title{
+
+        text-transform: capitalize;
+    }
+    .name{
+        font-size: 5px 18px;
+        font-weight: 600;
+        padding: 18px
+    }
+    .details{
+        .pres{
+            
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 5px 10px
+
+        }
+    }
+
+    .listContact{
+        display: flex;
+        list-style-type: none;
+        align-items: baseline;
+        gap: 20px;
+        a{
+            padding: 5px;
+            background-color: #fff;
+            border-radius: 50%;
+            font-size: 20px;
+            width: 30px;
+            color: #000 !important;
+            height: 30px;
+            display: flex;
+            align-items: center
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .content_contact{
+        .liner{
+            display: none;
+        }
+        .name{
+            font-size: 2em !important;
+        }
+    }
+ 
+}
+
+@media (max-width: 768px) {
+    .content_contact{
+       
+        .wrapper{
+            width: 100%;
+            .name{
+                font-size: 1.5em !important;
+                margin-left: 0 !important;
+            }
+
+        }
+        
+        .desc{
+            padding: 0 1.5rem !important;
+            p{
+                font-size: .9em !important;
+            }
+        }
+    }
+ 
+}
